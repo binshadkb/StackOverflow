@@ -22,6 +22,7 @@ An iOS app built with UIKit and Combine that displays the top StackOverflow user
 
 **Clone the repository:**
 git clone git@github.com:binshadkb/StackOverflow.git
+
 **Open in Xcode:**
 open StackOverflow.xcodeproj
 Build and run on iOS 14 or later
