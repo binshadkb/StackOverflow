@@ -20,6 +20,10 @@
 		8D7EEFB82E2E47B000214730 /* UserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7EEFB72E2E47AE00214730 /* UserResponse.swift */; };
 		8D7EEFBB2E2E49C500214730 /* NetworkManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7EEFBA2E2E49C400214730 /* NetworkManagerProtocol.swift */; };
 		8D7EEFBD2E2E49D600214730 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7EEFBC2E2E49D400214730 /* NetworkManager.swift */; };
+		8D7EEFC02E2E4CC700214730 /* UserApiServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7EEFBF2E2E4CC500214730 /* UserApiServiceProtocol.swift */; };
+		8D7EEFC22E2E4CE000214730 /* UserApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7EEFC12E2E4CDE00214730 /* UserApiService.swift */; };
+		8D7EEFC52E2E4D0200214730 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7EEFC42E2E4D0100214730 /* Constants.swift */; };
+		8D7EEFC82E2E4D2F00214730 /* MockUserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7EEFC72E2E4D2E00214730 /* MockUserService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +61,10 @@
 		8D7EEFB72E2E47AE00214730 /* UserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResponse.swift; sourceTree = "<group>"; };
 		8D7EEFBA2E2E49C400214730 /* NetworkManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerProtocol.swift; sourceTree = "<group>"; };
 		8D7EEFBC2E2E49D400214730 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		8D7EEFBF2E2E4CC500214730 /* UserApiServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserApiServiceProtocol.swift; sourceTree = "<group>"; };
+		8D7EEFC12E2E4CDE00214730 /* UserApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserApiService.swift; sourceTree = "<group>"; };
+		8D7EEFC42E2E4D0100214730 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8D7EEFC72E2E4D2E00214730 /* MockUserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUserService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +115,8 @@
 		8D7EEFA42E2E465800214730 /* StackOverflow */ = {
 			isa = PBXGroup;
 			children = (
+				8D7EEFC32E2E4CF700214730 /* Helpers */,
+				8D7EEFBE2E2E4CB400214730 /* ApiService */,
 				8D7EEFB92E2E49B600214730 /* Nerwork */,
 				8D7EEFB42E2E476100214730 /* Models */,
 				8D7EEF9B2E2E465800214730 /* AppDelegate.swift */,
@@ -123,6 +133,7 @@
 		8D7EEFAD2E2E465C00214730 /* StackOverflowTests */ = {
 			isa = PBXGroup;
 			children = (
+				8D7EEFC62E2E4D2100214730 /* Mocks */,
 				8D7EEFAC2E2E465C00214730 /* StackOverflowTests.swift */,
 			);
 			path = StackOverflowTests;
@@ -153,6 +164,31 @@
 				8D7EEFBA2E2E49C400214730 /* NetworkManagerProtocol.swift */,
 			);
 			path = Nerwork;
+			sourceTree = "<group>";
+		};
+		8D7EEFBE2E2E4CB400214730 /* ApiService */ = {
+			isa = PBXGroup;
+			children = (
+				8D7EEFC12E2E4CDE00214730 /* UserApiService.swift */,
+				8D7EEFBF2E2E4CC500214730 /* UserApiServiceProtocol.swift */,
+			);
+			path = ApiService;
+			sourceTree = "<group>";
+		};
+		8D7EEFC32E2E4CF700214730 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8D7EEFC42E2E4D0100214730 /* Constants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		8D7EEFC62E2E4D2100214730 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				8D7EEFC72E2E4D2E00214730 /* MockUserService.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,7 +331,10 @@
 			files = (
 				8D7EEFB82E2E47B000214730 /* UserResponse.swift in Sources */,
 				8D7EEFB62E2E477C00214730 /* User.swift in Sources */,
+				8D7EEFC22E2E4CE000214730 /* UserApiService.swift in Sources */,
 				8D7EEFA52E2E465800214730 /* AppDelegate.swift in Sources */,
+				8D7EEFC02E2E4CC700214730 /* UserApiServiceProtocol.swift in Sources */,
+				8D7EEFC52E2E4D0200214730 /* Constants.swift in Sources */,
 				8D7EEFBD2E2E49D600214730 /* NetworkManager.swift in Sources */,
 				8D7EEFA62E2E465800214730 /* SceneDelegate.swift in Sources */,
 				8D7EEFBB2E2E49C500214730 /* NetworkManagerProtocol.swift in Sources */,
@@ -307,6 +346,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D7EEFC82E2E4D2F00214730 /* MockUserService.swift in Sources */,
 				8D7EEFAE2E2E465C00214730 /* StackOverflowTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
