@@ -29,6 +29,7 @@
 		8D7EEFCF2E2E52F800214730 /* MockFollowManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7EEFCE2E2E52F600214730 /* MockFollowManager.swift */; };
 		8D7EEFD22E2E53AF00214730 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7EEFD12E2E53AE00214730 /* UserViewModel.swift */; };
 		8D7EEFD42E2E542900214730 /* UserViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7EEFD32E2E542800214730 /* UserViewModelTests.swift */; };
+		8D7EEFD72E2E59E700214730 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7EEFD62E2E59E600214730 /* UserTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		8D7EEFCE2E2E52F600214730 /* MockFollowManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFollowManager.swift; sourceTree = "<group>"; };
 		8D7EEFD12E2E53AE00214730 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		8D7EEFD32E2E542800214730 /* UserViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModelTests.swift; sourceTree = "<group>"; };
+		8D7EEFD62E2E59E600214730 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 		8D7EEFA42E2E465800214730 /* StackOverflow */ = {
 			isa = PBXGroup;
 			children = (
+				8D7EEFD52E2E59C300214730 /* View */,
 				8D7EEFD02E2E53A500214730 /* ViewModel */,
 				8D7EEFC92E2E52BC00214730 /* Persistant */,
 				8D7EEFC32E2E4CF700214730 /* Helpers */,
@@ -137,7 +140,6 @@
 				8D7EEF9F2E2E465800214730 /* LaunchScreen.storyboard */,
 				8D7EEFA12E2E465800214730 /* Main.storyboard */,
 				8D7EEFA22E2E465800214730 /* SceneDelegate.swift */,
-				8D7EEFA32E2E465800214730 /* ViewController.swift */,
 			);
 			path = StackOverflow;
 			sourceTree = "<group>";
@@ -220,6 +222,15 @@
 				8D7EEFD12E2E53AE00214730 /* UserViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8D7EEFD52E2E59C300214730 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8D7EEFD62E2E59E600214730 /* UserTableViewCell.swift */,
+				8D7EEFA32E2E465800214730 /* ViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -362,6 +373,7 @@
 			files = (
 				8D7EEFB82E2E47B000214730 /* UserResponse.swift in Sources */,
 				8D7EEFB62E2E477C00214730 /* User.swift in Sources */,
+				8D7EEFD72E2E59E700214730 /* UserTableViewCell.swift in Sources */,
 				8D7EEFC22E2E4CE000214730 /* UserApiService.swift in Sources */,
 				8D7EEFA52E2E465800214730 /* AppDelegate.swift in Sources */,
 				8D7EEFC02E2E4CC700214730 /* UserApiServiceProtocol.swift in Sources */,
