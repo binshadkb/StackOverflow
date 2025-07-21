@@ -1,6 +1,7 @@
 # StackOverflow Users App
 An iOS app built with UIKit and Combine that displays the top StackOverflow users, including support for follow/unfollow functionality with local persistence.
 
+
 **Features**
 
 - Fetch and display the top 20 StackOverflow users
@@ -10,6 +11,7 @@ An iOS app built with UIKit and Combine that displays the top StackOverflow user
 - Display an error message if the API call fails
 - No third-party libraries used
 
+
 **Architecture**
 
 - MVVM pattern
@@ -17,6 +19,8 @@ An iOS app built with UIKit and Combine that displays the top StackOverflow user
 - URLSession for network calls
 - UserDefaults to store follow state
 - Testable and modular code
+
+
 
 **Getting Started**
 
