@@ -29,7 +29,7 @@ git clone git@github.com:binshadkb/StackOverflow.git
 
 **Open in Xcode:**
 open StackOverflow.xcodeproj
-Build and run on iOS 14 or later
+Build and run on iOS 17 or later
 
 
 
