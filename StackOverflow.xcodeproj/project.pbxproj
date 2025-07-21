@@ -16,6 +16,10 @@
 		8D7EEFAE2E2E465C00214730 /* StackOverflowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7EEFAC2E2E465C00214730 /* StackOverflowTests.swift */; };
 		8D7EEFB22E2E465F00214730 /* StackOverflowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7EEFAF2E2E465F00214730 /* StackOverflowUITests.swift */; };
 		8D7EEFB32E2E465F00214730 /* StackOverflowUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7EEFB02E2E465F00214730 /* StackOverflowUITestsLaunchTests.swift */; };
+		8D7EEFB62E2E477C00214730 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7EEFB52E2E477A00214730 /* User.swift */; };
+		8D7EEFB82E2E47B000214730 /* UserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7EEFB72E2E47AE00214730 /* UserResponse.swift */; };
+		8D7EEFBB2E2E49C500214730 /* NetworkManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7EEFBA2E2E49C400214730 /* NetworkManagerProtocol.swift */; };
+		8D7EEFBD2E2E49D600214730 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7EEFBC2E2E49D400214730 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		8D7EEFAC2E2E465C00214730 /* StackOverflowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackOverflowTests.swift; sourceTree = "<group>"; };
 		8D7EEFAF2E2E465F00214730 /* StackOverflowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackOverflowUITests.swift; sourceTree = "<group>"; };
 		8D7EEFB02E2E465F00214730 /* StackOverflowUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackOverflowUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8D7EEFB52E2E477A00214730 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		8D7EEFB72E2E47AE00214730 /* UserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResponse.swift; sourceTree = "<group>"; };
+		8D7EEFBA2E2E49C400214730 /* NetworkManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerProtocol.swift; sourceTree = "<group>"; };
+		8D7EEFBC2E2E49D400214730 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +107,8 @@
 		8D7EEFA42E2E465800214730 /* StackOverflow */ = {
 			isa = PBXGroup;
 			children = (
+				8D7EEFB92E2E49B600214730 /* Nerwork */,
+				8D7EEFB42E2E476100214730 /* Models */,
 				8D7EEF9B2E2E465800214730 /* AppDelegate.swift */,
 				8D7EEF9C2E2E465800214730 /* Assets.xcassets */,
 				8D7EEF9D2E2E465800214730 /* Info.plist */,
@@ -125,6 +135,24 @@
 				8D7EEFB02E2E465F00214730 /* StackOverflowUITestsLaunchTests.swift */,
 			);
 			path = StackOverflowUITests;
+			sourceTree = "<group>";
+		};
+		8D7EEFB42E2E476100214730 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8D7EEFB72E2E47AE00214730 /* UserResponse.swift */,
+				8D7EEFB52E2E477A00214730 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8D7EEFB92E2E49B600214730 /* Nerwork */ = {
+			isa = PBXGroup;
+			children = (
+				8D7EEFBC2E2E49D400214730 /* NetworkManager.swift */,
+				8D7EEFBA2E2E49C400214730 /* NetworkManagerProtocol.swift */,
+			);
+			path = Nerwork;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,8 +293,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D7EEFB82E2E47B000214730 /* UserResponse.swift in Sources */,
+				8D7EEFB62E2E477C00214730 /* User.swift in Sources */,
 				8D7EEFA52E2E465800214730 /* AppDelegate.swift in Sources */,
+				8D7EEFBD2E2E49D600214730 /* NetworkManager.swift in Sources */,
 				8D7EEFA62E2E465800214730 /* SceneDelegate.swift in Sources */,
+				8D7EEFBB2E2E49C500214730 /* NetworkManagerProtocol.swift in Sources */,
 				8D7EEFA72E2E465800214730 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
