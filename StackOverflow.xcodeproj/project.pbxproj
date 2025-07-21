@@ -24,6 +24,9 @@
 		8D7EEFC22E2E4CE000214730 /* UserApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7EEFC12E2E4CDE00214730 /* UserApiService.swift */; };
 		8D7EEFC52E2E4D0200214730 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7EEFC42E2E4D0100214730 /* Constants.swift */; };
 		8D7EEFC82E2E4D2F00214730 /* MockUserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7EEFC72E2E4D2E00214730 /* MockUserService.swift */; };
+		8D7EEFCB2E2E52CA00214730 /* FollowManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7EEFCA2E2E52C900214730 /* FollowManagerProtocol.swift */; };
+		8D7EEFCD2E2E52DB00214730 /* FollowManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7EEFCC2E2E52DA00214730 /* FollowManager.swift */; };
+		8D7EEFCF2E2E52F800214730 /* MockFollowManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7EEFCE2E2E52F600214730 /* MockFollowManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +68,9 @@
 		8D7EEFC12E2E4CDE00214730 /* UserApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserApiService.swift; sourceTree = "<group>"; };
 		8D7EEFC42E2E4D0100214730 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		8D7EEFC72E2E4D2E00214730 /* MockUserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUserService.swift; sourceTree = "<group>"; };
+		8D7EEFCA2E2E52C900214730 /* FollowManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowManagerProtocol.swift; sourceTree = "<group>"; };
+		8D7EEFCC2E2E52DA00214730 /* FollowManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowManager.swift; sourceTree = "<group>"; };
+		8D7EEFCE2E2E52F600214730 /* MockFollowManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFollowManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +121,7 @@
 		8D7EEFA42E2E465800214730 /* StackOverflow */ = {
 			isa = PBXGroup;
 			children = (
+				8D7EEFC92E2E52BC00214730 /* Persistant */,
 				8D7EEFC32E2E4CF700214730 /* Helpers */,
 				8D7EEFBE2E2E4CB400214730 /* ApiService */,
 				8D7EEFB92E2E49B600214730 /* Nerwork */,
@@ -186,9 +193,19 @@
 		8D7EEFC62E2E4D2100214730 /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
+				8D7EEFCE2E2E52F600214730 /* MockFollowManager.swift */,
 				8D7EEFC72E2E4D2E00214730 /* MockUserService.swift */,
 			);
 			path = Mocks;
+			sourceTree = "<group>";
+		};
+		8D7EEFC92E2E52BC00214730 /* Persistant */ = {
+			isa = PBXGroup;
+			children = (
+				8D7EEFCC2E2E52DA00214730 /* FollowManager.swift */,
+				8D7EEFCA2E2E52C900214730 /* FollowManagerProtocol.swift */,
+			);
+			path = Persistant;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -337,6 +354,8 @@
 				8D7EEFC52E2E4D0200214730 /* Constants.swift in Sources */,
 				8D7EEFBD2E2E49D600214730 /* NetworkManager.swift in Sources */,
 				8D7EEFA62E2E465800214730 /* SceneDelegate.swift in Sources */,
+				8D7EEFCD2E2E52DB00214730 /* FollowManager.swift in Sources */,
+				8D7EEFCB2E2E52CA00214730 /* FollowManagerProtocol.swift in Sources */,
 				8D7EEFBB2E2E49C500214730 /* NetworkManagerProtocol.swift in Sources */,
 				8D7EEFA72E2E465800214730 /* ViewController.swift in Sources */,
 			);
@@ -348,6 +367,7 @@
 			files = (
 				8D7EEFC82E2E4D2F00214730 /* MockUserService.swift in Sources */,
 				8D7EEFAE2E2E465C00214730 /* StackOverflowTests.swift in Sources */,
+				8D7EEFCF2E2E52F800214730 /* MockFollowManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
